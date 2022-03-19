@@ -25,8 +25,6 @@
     <!-- 侧边栏 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 
-
-
 </head>
 
 <body>
@@ -38,15 +36,14 @@
             repo: ''
         }
     </script>
-
-
     <script>
         window.$docsify = {
             loadSidebar: true,
             alias: {
                 '/.*/_sidebar.md': '/_sidebar.md',
             },
-            sidebarDisplayLevel: 5,
+            subMaxLevel: 5,
+            sidebarDisplayLevel: 3,
         }
     </script>
 
