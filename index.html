@@ -21,13 +21,12 @@
     </style>
 
     <!-- 侧边栏插件的样式 -->
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 
     <!-- 代码高亮主题 https://github.com/PrismJS/prism-themes -->
     <link href="_themes/prism-vsc-dark-plus.css" rel="stylesheet" />
 
-    <!-- 侧边栏插件 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
 
 </head>
 
@@ -40,26 +39,31 @@
             repo: ''
         }
     </script>
-     <script>
+
+
+    <script>
         window.$docsify = {
-            toc: {
-                scope: '.markdown-section',
-                headings: 'h1, h2, h3, h4, h5, h6',
-                title: 'Table of Contents',
+            loadSidebar: true,
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md',
             },
+            subMaxLevel: 3,
+            sidebarDisplayLevel: 1, // set sidebar display level
         }
     </script>
-    <script>
+
+    <!-- <script>
         window.$docsify = {
             loadSidebar: true
         }
-    </script>
-   
+    </script> -->
+
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4">
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-
+    <!-- 侧边栏插件 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
     <!-- 图片缩放 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 代码拷贝 -->
