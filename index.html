@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        Document
+        个人笔记
     </title>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta content="Description" name="description">
@@ -19,14 +19,16 @@
             overflow: auto;
         }
     </style>
-
+    <!-- 侧边栏插件 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
     <!-- 侧边栏插件的样式 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 
     <!-- 代码高亮主题 https://github.com/PrismJS/prism-themes -->
     <link href="_themes/prism-vsc-dark-plus.css" rel="stylesheet" />
-
-
+    <!-- 右侧导航 -->
+    <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
 
 </head>
 
@@ -47,22 +49,20 @@
             alias: {
                 '/.*/_sidebar.md': '/_sidebar.md',
             },
-            sidebarDisplayLevel: 0, // set sidebar display level
+            toc: {
+                scope: '.markdown-section',
+                headings: 'h1, h2, h3, h4, h5, h6',
+                title: 'Table of Contents',
+            },
+            sidebarDisplayLevel: 1, // set sidebar display level
         }
     </script>
-
-    <!-- <script>
-        window.$docsify = {
-            loadSidebar: true
-        }
-    </script> -->
 
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4">
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <!-- 侧边栏插件 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
     <!-- 图片缩放 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 代码拷贝 -->
