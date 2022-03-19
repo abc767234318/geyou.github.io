@@ -26,12 +26,7 @@
     <!-- 代码高亮主题 https://github.com/PrismJS/prism-themes -->
     <link href="_themes/prism-vsc-dark-plus.css" rel="stylesheet" />
 
-    <!-- 图片缩放 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-    <!-- 代码拷贝 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-    <!-- 字数统计 -->
-    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+    
 
 </head>
 
@@ -48,14 +43,14 @@
         window.$docsify = {
             loadSidebar: true
         }
-        // // toc
-        // window.$docsify = {
-        //     toc: {
-        //         scope: '.markdown-section',
-        //         headings: 'h1, h2, h3, h4, h5, h6',
-        //         title: 'Table of Contents',
-        //     },
-        // }
+        // toc
+        window.$docsify = {
+            toc: {
+                scope: '.markdown-section',
+                headings: 'h1, h2, h3, h4, h5, h6',
+                title: 'Table of Contents',
+            },
+        }
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4">
@@ -64,6 +59,12 @@
     </script>
     <!-- 侧边栏插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <!-- 图片缩放 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- 代码拷贝 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <!-- 字数统计 -->
+    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
 
 </html>
