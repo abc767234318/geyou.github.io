@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\mastering-wasm"
+		},
+		{
+			"path": "..\\wasmgo-book"
+		}
+	],
+	"settings": {}
+}
