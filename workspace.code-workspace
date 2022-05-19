@@ -5,9 +5,6 @@
 		},
 		{
 			"path": "..\\mastering-wasm"
-		},
-		{
-			"path": "..\\wasmgo-book"
 		}
 	],
 	"settings": {}
